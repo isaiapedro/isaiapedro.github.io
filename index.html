@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/85f5b666a6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Início</a></li>
+                    <li><a href="#portfolio">Projetos</a></li>
+                    <li><a href="#services">Ferramentas</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                    <li class="language-menu">
+                        <i class="fas fa-globe"></i>
+                        <div class="dropdown-content">
+                            <a href="../index.html">English</a>
+                        </div>
+                    </li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <section>
+                <div class="wave">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="header-text">
+                <h1>Oi! Eu sou o <span>Pedro</span>.<br>Engenheiro de Dados.</h1>
+            </div>
+            </section>
+        </div>
+    </div>
+    <!-----------------------portfolio------------------------>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Meus Projetos</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>Donec bibendum augue eu mattis interdum.
+                     Phasellus cursus porta purus.</p>
+                     <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>Donec bibendum augue eu mattis interdum.
+                     Phasellus cursus porta purus.</p>
+                     <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>Donec bibendum augue eu mattis interdum.
+                     Phasellus cursus porta purus.</p>
+                     <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+<!----------------------------services---------------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Habilidades / Stacks</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Donec bibendum augue eu mattis interdum.
+                     Phasellus cursus porta purus. In hac 
+                     habitasse platea dictumst. Nullam 
+                     imperdiet velit eu nisl rutrum, ac 
+                     tincidunt ligula hendrerit. </p>
+                     <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>Donec bibendum augue eu mattis interdum.
+                     Phasellus cursus porta purus. In hac 
+                     habitasse platea dictumst. Nullam 
+                     imperdiet velit eu nisl rutrum, ac 
+                     tincidunt ligula hendrerit. </p>
+                     <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Donec bibendum augue eu mattis interdum.
+                     Phasellus cursus porta purus. In hac 
+                     habitasse platea dictumst. Nullam 
+                     imperdiet velit eu nisl rutrum, ac 
+                     tincidunt ligula hendrerit.</p>
+                     <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------------------about-------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">Conheça mais sobre mim</h1>
+                <p>Olá, me chamo <span>Pedro Isaia</span> e tenho interesse em <span>Machine Learning</span> e <span>MLOps</span>.
+                <br>
+                <br>
+                Eu estou me aprofundando na criação de pipelines, manipualçao de dados 1D, 2D e em tabelas estruturadas.
+                <br>
+                <br>
+                Fluxo de dados streaming e em batch, e na criação
+                de dashboards para aplicações web e mobile.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Soft Skills</p>
+                    <p class="tab-links" onclick="opentab('education')"">Educação</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Comunicação</span><br>Comunicação efetiva para esclarecer ideias e comunicar dificuldades</li>
+                        <li><span>Perfil Analítico</span><br>Identificação do problema e pensamento ágil para encontrar soluções</li>
+                        <li><span>Trabalho em Equipe</span><br>Cooperação em equipe e com líderes</li>  
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2027 (previsão)</span><br>Bacharel em Engenharia de Computação na UFSCar</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------------------------contact---------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>isaiacontato@gmail.com</p>
+                <p><i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/in/isaiapedro">Linkedin Profile</a></p>
+                <a href="images/CV_PedroIsaia.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email">
+                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+
+        
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+
+</script>
+
+
+<script>
+    var sidemenu = document.getElementById("sidemenu")
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+
+<script>
+  const scriptURL = '<https://script.google.com/macros/s/AKfycbz6FUObwCrYfuyJfVLRnRiKp6-4JExK2w-v1Sn_QL9yR8XMRkfftkSGpXw4BWScgvJv/exec>'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message Sent Successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        }, 5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+
+</body>
+</html>
