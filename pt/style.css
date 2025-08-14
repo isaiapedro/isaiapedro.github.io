@@ -95,9 +95,11 @@
         display: inline-block;
     }
 
-    .language-menu .fa-globe {
-        font-size: 22px; /* Ajuste o tamanho do ícone se necessário */
-        color: #fff;
+    .language-menu img {
+        width: 28px;
+        height: 28px;
+        transform: translate(0px, 7px);
+        object-fit: contain;
         cursor: pointer;
     }
 
@@ -298,49 +300,90 @@
         background: #29339b;
     }
 
-    /* ----------services----------*/
-    #services{
+/* ----------services----------*/
+    #services {
         padding: 80px 0;
     }
 
-    .services-list{
+    .tech-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        grid-gap: 40px;
+        /* Ajustado para caber mais ícones na tela */
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-gap: 30px;
         margin-top: 50px;
     }
 
-    .services-list div{
-        background: #262626;
-        padding: 40px;
-        font-size: 13px;
-        font-weight: 300;
+    .tech-card {
+        background-color: transparent;
+        height: 150px;
+        perspective: 1000px; /* Efeito 3D */
+        cursor: pointer;
+    }
+
+    .tech-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.7s;
+        transform-style: preserve-3d;
+    }
+
+    /* Animação de virar ao passar o mouse */
+    .tech-card:hover .tech-card-inner {
+        transform: rotateY(180deg);
+    }
+
+    .tech-card-front, .tech-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden; /* Safari */
+        backface-visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         border-radius: 10px;
-        transition: background 0.5s, transform 0.5s;
-    }
-
-    .services-list div i{
-        font-size: 50px;
-        margin-bottom: 30px;
-    }
-
-    .services-list div h2{
-        font-size: 30px;
-        font-weight: 500;
-        margin-bottom: 15px;
-    }
-
-    .services-list div a{
-        text-decoration: none;
+        background: #262626; /* Cor original dos seus cards */
         color: #fff;
-        font-size: 12px;
-        margin-top: 20px;
-        display: inline-block;
+        padding: 20px;
     }
 
-    .services-list div:hover{
-        background: #4167E5;
-        transform: translateY(-10px);
+    /* Estilo da frente do card (ícone e nome) */
+    .tech-card-front i {
+        font-size: 50px;
+        margin-bottom: 15px;
+        color: #4973ff; /* Cor da sua paleta */
+    }
+
+   .tech-card-front img {
+        width: 55px;     /* Para as imagens SVG */
+        height: 55px;    /* Para as imagens SVG */
+        margin-bottom: 15px;
+        object-fit: contain;
+        color: #4973ff;
+    }
+
+    .tech-card-front p {
+        font-size: 1.1em;
+        font-weight: 500;
+    }
+
+    /* Estilo da parte de trás do card (descrição) */
+    .tech-card-back {
+        background: #4167E5; /* Cor de destaque da sua paleta */
+        transform: rotateY(180deg); /* Começa virado */
+    }
+
+    .tech-card-back h3 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+
+    .tech-card-back p {
+        font-size: 0.9em;
+        line-height: 1.4;
     }
 
     /* ------------about--------------- */
@@ -388,7 +431,7 @@
 
     .tab-titles{
         display: flex;
-        margin: 0px 0 40px;
+        margin: 0px 0 28px;
     }
 
     .tab-links{
@@ -406,7 +449,7 @@
         background: #4167E5;
         position: absolute;
         left: 0;
-        bottom: -8px;
+        bottom: 7px;
         transition: 0.5s;
     }
 
