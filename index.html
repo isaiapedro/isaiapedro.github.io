@@ -36,352 +36,494 @@
                     <span></span>
                 </div>
                 <div class="header-text">
-                <h1>Hello, I'm <span>Pedro</span>.<br>Data Engineer.</h1>
+                    <h1>Hello, I'm <span>Pedro</span>.<br>Data Engineer.</h1>
+                </div>
+            <div class="mouse_scroll">
+                <div>
+                    <span class="m_scroll_arrows unu"></span>
+                    <span class="m_scroll_arrows doi"></span>
+                    <span class="m_scroll_arrows trei"></span>
+                </div>
             </div>
             </section>
+            
         </div>
     </div>
+
     <!-----------------------portfolio------------------------>
-<div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title">My Work</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="images/work-1.png">
-                <div class="layer">
-                    <h3>Healthcare Mobile App</h3>
-                    <p>Developed solution that shows vitals in real time and 
-                        emits signal when pacient is at risk.
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+
+            <div class="project-list-container">
+                <ul class="project-list-modern">
+                    <li class="project-item" 
+                        data-img="images/work-1.png" 
+                        data-title="Healthcare Mobile App"
+                        data-description="Developed a real-time monitoring solution that displays vital signs and triggers alerts when a patient is at risk."
+                        data-tech="Flutter, Kafka, Tensorflow Lite, Fast API, MLFlow"
+                        data-live-url="#"
+                        data-code-url="https://github.com/isaiapedro/ecg-heartbeat-classifier">
+
+                        <a href="#" target="_blank">
+                            <div class="project-info">
+                                <h3>Healthcare Mobile App</h3>
+                                <span>Mobile / Real-Time Data</span>
+                            </div>
+                        </a>
+                        <div class="project-preview">
+                            <img src="images/work-1.png" alt="Healthcare App Preview">
+                        </div>
+                    </li>
+
+                    <li class="project-item"
+                        data-img="images/work-2.png"
+                        data-title="NBA App"
+                        data-description="Created a mobile app for basketball enthusiasts that displays player statistics and predicts the next MVP using a Deep Learning model."
+                        data-tech="Tensorflow, Angular, Airflow, SQL, PowerBI, Docker"
+                        data-live-url="#"
+                        data-code-url="https://github.com/isaiapedro/nba-app">
+
+                        <a href="#" target="_blank">
+                            <div class="project-info">
+                                <h3>NBA App</h3>
+                                <span>Web App / Machine Learning</span>
+                            </div>
+                        </a>
+                        <div class="project-preview">
+                            <img src="images/work-2.png" alt="NBA App Preview">
+                        </div>
+                    </li>
+
+                    <li class="project-item"
+                        data-img="images/work-3.png"
+                        data-title="Churn Predictor"
+                        data-description="Built an automated, interactive dashboard that displays customer data and predicts churn rate, enabling proactive retention strategies."
+                        data-tech="Python, SQL, Streamlit, Scikit-Learn, Airflow"
+                        data-live-url="#"
+                        data-code-url="https://github.com/isaiapedro/churn-prediction">
+
+                        <a href="#" target="_blank">
+                            <div class="project-info">
+                                <h3>Churn Predictor</h3>
+                                <span>Dashboard / Data Science</span>
+                            </div>
+                        </a>
+                        <div class="project-preview">
+                            <img src="images/work-3.png" alt="Churn Predictor Preview">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <a href="https://github.com/isaiapedro" target="_blank" class="btn">See More</a>
+        </div>
+    </div>
+
+    <div id="modal-backdrop" class="">
+        <div id="project-modal" class="">
+            <button class="close-modal-btn" id="close-modal">&times;</button>
+            <div class="modal-content">
+                <img id="modal-img" src="" alt="Project Image">
+                <h2 id="modal-title"></h2>
+                <p id="modal-description"></p>
+                <div id="modal-tech-stack">
+                    </div>
+
+                <div class="modal-links">
+                    <a id="modal-live-link" href="#" target="_blank" class="btn">Ver Projeto</a>
+                    <a id="modal-code-link" href="#" target="_blank" class="btn btn2">Ver Código</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------------stacks---------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Stacks</h1>
+            <div class="tech-grid">
+                
+                <div class="tech-card">
+                    <div class="tech-card-inner">
+                        <div class="tech-card-front">
+                            <i class="fa-brands fa-python"></i>
+                            <p>Python</p>
+                        </div>
+                        <div class="tech-card-back">
+                            <h3>Python</h3>
+                            <p>Data manipulation and visualization</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-card-inner">
+                        <div class="tech-card-front">
+                            <img src="images/numpy.svg" alt="Logo Pandas e Numpy">
+                            <p>Pandas & Numpy</p>
+                        </div>
+                        <div class="tech-card-back">
+                            <h3>Pandas & Numpy</h3>
+                            <p>Array manipulation and sorting</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-card-inner">
+                        <div class="tech-card-front">
+                            <img src="images/scikit.svg" alt="Logo Scikit">
+                            <p>Scikit-Learn</p>
+                        </div>
+                        <div class="tech-card-back">
+                            <h3>Scikit-Learn</h3>
+                            <p>Machine Learning and ML modeling</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-card-inner">
+                        <div class="tech-card-front">
+                            <img src="images/tensorflow.svg" alt="Logo Tensorflow">
+                            <p>TensorFlow</p>
+                        </div>
+                        <div class="tech-card-back">
+                            <h3>TensorFlow</h3>
+                            <p>Deep Learning with CUDA</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-card-inner">
+                        <div class="tech-card-front">
+                            <i class="fa-solid fa-database"></i>
+                            <p>SQL</p>
+                        </div>
+                        <div class="tech-card-back">
+                            <h3>SQL</h3>
+                            <p>Structured table-based storage</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-card-inner">
+                        <div class="tech-card-front">
+                            <img src="images/streamlit.svg" alt="Logo Streamlit">
+                            <p>Streamlit</p>
+                        </div>
+                        <div class="tech-card-back">
+                            <h3>Streamlit</h3>
+                            <p>Interactive dashboards and visualization</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tech-card">
+                    <div class="tech-card-inner">
+                        <div class="tech-card-front">
+                            <i class="fa-brands fa-angular"></i>
+                            <p>Angular</p>
+                        </div>
+                        <div class="tech-card-back">
+                            <h3>Angular</h3>
+                            <p>Web Applications built fast</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-card-inner">
+                        <div class="tech-card-front">
+                            <i class="fa-brands fa-flutter"></i>
+                            <p>Flutter</p>
+                        </div>
+                        <div class="tech-card-back">
+                            <h3>Flutter</h3>
+                            <p>Native Mobile framework</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tech-card">
+                    <div class="tech-card-inner">
+                        <div class="tech-card-front">
+                            <i class="fa-brands fa-git-alt"></i>
+                            <p>Git</p>
+                        </div>
+                        <div class="tech-card-back">
+                            <h3>Git</h3>
+                            <p>Code versioning and colaboration</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-card-inner">
+                        <div class="tech-card-front">
+                            <i class="fa-brands fa-docker"></i>
+                            <p>Docker</p>
+                        </div>
+                        <div class="tech-card-back">
+                            <h3>Docker</h3>
+                            <p>Containerizing everything</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-card-inner">
+                        <div class="tech-card-front">
+                            <img src="images/airflow.svg" alt="Logo Airflow">
+                            <p>Airflow</p>
+                        </div>
+                        <div class="tech-card-back">
+                            <h3>Airflow</h3>
+                            <p>Data flow orchestration</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-card-inner">
+                        <div class="tech-card-front">
+                            <img src="images/kafka.svg" alt="Logo Kafka">
+                            <p>Kafka</p>
+                        </div>
+                        <div class="tech-card-back">
+                            <h3>Kafka</h3>
+                            <p>Fast and reliable streaming support</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-card-inner">
+                        <div class="tech-card-front">
+                            <img src="images/kubernetes.svg" alt="Logo Kubernetes">
+                            <p>Kubernetes</p>
+                        </div>
+                        <div class="tech-card-back">
+                            <h3>Kubernetes</h3>
+                            <p>Conteiner managment in production</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-card-inner">
+                        <div class="tech-card-front">
+                            <i class="fa-brands fa-aws"></i>
+                            <p>AWS</p>
+                        </div>
+                        <div class="tech-card-back">
+                            <h3>AWS</h3>
+                            <p>Cloud services and platforms</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------about-------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm <span>Pedro Isaia</span>, nice to meet you! I'm interested in <span>Machine Learning</span> and <span>MLOps</span>.
+                    <br>
+                    <br>
+                    I'm diving deep into data pipelines, 1D and 2D data arrays, SQL databases, Conteiners, project testing and App Development.
+                    <br>
+                    <br>
+                    I can make cool dashboards and improve systems by automating ETL, from data collecting to deployment.
                     </p>
-                     <a href="#" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/work-2.png">
-                <div class="layer">
-                    <h3>NBA App</h3>
-                    <p>Web App that shows basketball information and predicts the next MVP.</p>
-                     <a href="#" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/work-3.png">
-                <div class="layer">
-                    <h3>Churn Predictor</h3>
-                    <p>Dashboard that shows client data and predicts churn rate.</p>
-                     <a href="#" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Soft Skills</p>
+                        <p class="tab-links" onclick="opentab('education')"">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Good Comunication</span><br>Ability to give clear instructions and communicate effectively</li>
+                            <li><span>Analytical Skills</span><br>Focus on problem solving, dividing problem into minor tasks</li>
+                            <li><span>Teamwork</span><br>Good cooperation, having worked with different teams</li>  
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2027 (est.)</span><br>BE on Computer Engineering at UFSCar</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-        <a href="https://github.com/isaiapedro" target="_blank" class="btn">See More</a>
     </div>
-</div>
 
-<!----------------------------stacks---------------------------->
-<div id="services">
-    <div class="container">
-        <h1 class="sub-title">My Stacks</h1>
-        <div class="tech-grid">
+    <!----------------------------contact---------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>isaiacontato@gmail.com</p>
+                    <p><i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/in/isaiapedro" target="_blank">Linkedin Profile</a></p>
+                    <a href="images/CV_PedroIsaia.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email">
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Efeito de preview de projeto seguindo o mouse
+        document.addEventListener('DOMContentLoaded', () => {
+            const projectItems = document.querySelectorAll('.project-item');
+
+            projectItems.forEach(item => {
+                const preview = item.querySelector('.project-preview');
+
+                item.addEventListener('mousemove', (e) => {
+                    // e.clientX e e.clientY dão a posição do mouse na tela
+                    preview.style.left = e.clientX + 'px';
+                    preview.style.top = e.clientY + 'px';
+                });
+            });
+        });
+    </script>
+
+    <script>
+    // ==================== LÓGICA DO MODAL ====================
+    document.addEventListener('DOMContentLoaded', () => {
+        // Seleciona todos os elementos necessários
+        const projectItems = document.querySelectorAll('.project-item');
+        const modalBackdrop = document.getElementById('modal-backdrop');
+        const projectModal = document.getElementById('project-modal');
+        const closeModalBtn = document.getElementById('close-modal');
+
+        // Seleciona os elementos dentro do modal que serão preenchidos
+        const modalImg = document.getElementById('modal-img');
+        const modalTitle = document.getElementById('modal-title');
+        const modalDescription = document.getElementById('modal-description');
+        const modalTechStack = document.getElementById('modal-tech-stack');
+        const modalLiveLink = document.getElementById('modal-live-link');
+        const modalCodeLink = document.getElementById('modal-code-link');
+
+        projectItems.forEach(item => {
+            // Usamos o evento 'click' no item inteiro
+            item.addEventListener('click', (event) => {
+                event.preventDefault(); // Impede o link <a> de navegar
+
+                // 1. Pega os dados do item clicado usando o dataset
+                const data = item.dataset;
+
+                // 2. Preenche o modal com os dados
+                modalImg.src = data.img;
+                modalTitle.textContent = data.title;
+                modalDescription.textContent = data.description;
+                modalLiveLink.href = data.liveUrl;
+                modalCodeLink.href = data.codeUrl;
+
+                // Limpa as tecnologias antigas
+                modalTechStack.innerHTML = '';
+                // Cria os bloquinhos de tecnologia
+                const technologies = data.tech.split(',').map(tech => tech.trim());
+                technologies.forEach(techName => {
+                    const techSpan = document.createElement('span');
+                    techSpan.textContent = techName;
+                    modalTechStack.appendChild(techSpan);
+                });
+                
+                // 3. Mostra o modal
+                modalBackdrop.classList.add('active');
+                projectModal.classList.add('active');
+            });
+        });
+
+        // Função para fechar o modal
+        const closeModal = () => {
+            modalBackdrop.classList.remove('active');
+            projectModal.classList.remove('active');
+        };
+
+        // Event listeners para fechar o modal
+        closeModalBtn.addEventListener('click', closeModal);
+        modalBackdrop.addEventListener('click', (event) => {
+            // Fecha somente se clicar no fundo, e não no conteúdo do modal
+            if (event.target === modalBackdrop) {
+                closeModal();
+            }
+        });
+    });
+    </script>
+    
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+
             
-            <div class="tech-card">
-                <div class="tech-card-inner">
-                    <div class="tech-card-front">
-                        <i class="fa-brands fa-python"></i>
-                        <p>Python</p>
-                    </div>
-                    <div class="tech-card-back">
-                        <h3>Python</h3>
-                        <p>Data manipulation and visualization</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="tech-card">
-                <div class="tech-card-inner">
-                    <div class="tech-card-front">
-                        <img src="images/numpy.svg" alt="Logo Pandas e Numpy">
-                        <p>Pandas & Numpy</p>
-                    </div>
-                    <div class="tech-card-back">
-                        <h3>Pandas & Numpy</h3>
-                        <p>Array manipulation and sorting</p>
-                    </div>
-                </div>
-            </div>
-            <div class="tech-card">
-                <div class="tech-card-inner">
-                    <div class="tech-card-front">
-                        <img src="images/scikit.svg" alt="Logo Scikit">
-                        <p>Scikit-Learn</p>
-                    </div>
-                    <div class="tech-card-back">
-                        <h3>Scikit-Learn</h3>
-                        <p>Machine Learning and ML modeling</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="tech-card">
-                <div class="tech-card-inner">
-                    <div class="tech-card-front">
-                        <img src="images/tensorflow.svg" alt="Logo Tensorflow">
-                        <p>TensorFlow</p>
-                    </div>
-                    <div class="tech-card-back">
-                        <h3>TensorFlow</h3>
-                        <p>Deep Learning with CUDA</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="tech-card">
-                <div class="tech-card-inner">
-                    <div class="tech-card-front">
-                        <i class="fa-solid fa-database"></i>
-                        <p>SQL</p>
-                    </div>
-                    <div class="tech-card-back">
-                        <h3>SQL</h3>
-                        <p>Structured table-based storage</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="tech-card">
-                <div class="tech-card-inner">
-                    <div class="tech-card-front">
-                        <img src="images/streamlit.svg" alt="Logo Streamlit">
-                        <p>Streamlit</p>
-                    </div>
-                    <div class="tech-card-back">
-                        <h3>Streamlit</h3>
-                        <p>Interactive dashboards and visualization</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="tech-card">
-                <div class="tech-card-inner">
-                    <div class="tech-card-front">
-                        <i class="fa-brands fa-angular"></i>
-                        <p>Angular</p>
-                    </div>
-                    <div class="tech-card-back">
-                        <h3>Angular</h3>
-                        <p>Web Applications built fast</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="tech-card">
-                <div class="tech-card-inner">
-                    <div class="tech-card-front">
-                        <i class="fa-brands fa-flutter"></i>
-                        <p>Flutter</p>
-                    </div>
-                    <div class="tech-card-back">
-                        <h3>Flutter</h3>
-                        <p>Native Mobile framework</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="tech-card">
-                <div class="tech-card-inner">
-                    <div class="tech-card-front">
-                        <i class="fa-brands fa-git-alt"></i>
-                        <p>Git</p>
-                    </div>
-                    <div class="tech-card-back">
-                        <h3>Git</h3>
-                        <p>Code versioning and colaboration</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="tech-card">
-                <div class="tech-card-inner">
-                    <div class="tech-card-front">
-                        <i class="fa-brands fa-docker"></i>
-                        <p>Docker</p>
-                    </div>
-                    <div class="tech-card-back">
-                        <h3>Docker</h3>
-                        <p>Containerizing everything</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="tech-card">
-                <div class="tech-card-inner">
-                    <div class="tech-card-front">
-                        <img src="images/airflow.svg" alt="Logo Airflow">
-                        <p>Airflow</p>
-                    </div>
-                    <div class="tech-card-back">
-                        <h3>Airflow</h3>
-                        <p>Data flow orchestration</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="tech-card">
-                <div class="tech-card-inner">
-                    <div class="tech-card-front">
-                        <img src="images/kafka.svg" alt="Logo Kafka">
-                        <p>Kafka</p>
-                    </div>
-                    <div class="tech-card-back">
-                        <h3>Kafka</h3>
-                        <p>Fast and reliable streaming support</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="tech-card">
-                <div class="tech-card-inner">
-                    <div class="tech-card-front">
-                        <img src="images/kubernetes.svg" alt="Logo Kubernetes">
-                        <p>Kubernetes</p>
-                    </div>
-                    <div class="tech-card-back">
-                        <h3>Kubernetes</h3>
-                        <p>Conteiner managment in production</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="tech-card">
-                <div class="tech-card-inner">
-                    <div class="tech-card-front">
-                        <i class="fa-brands fa-aws"></i>
-                        <p>AWS</p>
-                    </div>
-                    <div class="tech-card-back">
-                        <h3>AWS</h3>
-                        <p>Cloud services and platforms</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!------------------about-------------------->
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="images/user.png">
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <p>I'm <span>Pedro Isaia</span>, nice to meet you! I'm interested in <span>Machine Learning</span> and <span>MLOps</span>.
-                <br>
-                <br>
-                I'm diving deep into data pipelines, 1D and 2D data arrays, SQL databases, Conteiners, project testing and App Development.
-                <br>
-                <br>
-                I can make cool dashboards and improve systems by automating ETL, from data collecting to deployment.
-                </p>
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Soft Skills</p>
-                    <p class="tab-links" onclick="opentab('education')"">Education</p>
-                </div>
-                <div class="tab-contents active-tab" id="skills">
-                    <ul>
-                        <li><span>Good Comunication</span><br>Ability to give clear instructions and communicate effectively</li>
-                        <li><span>Analytical Skills</span><br>Focus on problem solving, dividing problem into minor tasks</li>
-                        <li><span>Teamwork</span><br>Good cooperation, having worked with different teams</li>  
-                    </ul>
-                </div>
-                <div class="tab-contents" id="education">
-                    <ul>
-                        <li><span>2027 (est.)</span><br>BE on Computer Engineering at UFSCar</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!----------------------------contact---------------------------->
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-paper-plane"></i>isaiacontato@gmail.com</p>
-                <p><i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/in/isaiapedro" target="_blank">Linkedin Profile</a></p>
-                <a href="images/CV_PedroIsaia.pdf" download class="btn btn2">Download CV</a>
-            </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email">
-                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
-                <span id="msg"></span>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<script>
-
-    var tablinks = document.getElementsByClassName("tab-links")
-    var tabcontents = document.getElementsByClassName("tab-contents")
-
-        
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
         }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
+
+
+    </script>
+
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu")
+
+        function openmenu(){
+            sidemenu.style.right = "0";
         }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab")
-    }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
 
 
-</script>
+    <script>
+    const scriptURL = '<https://script.google.com/macros/s/AKfycbz6FUObwCrYfuyJfVLRnRiKp6-4JExK2w-v1Sn_QL9yR8XMRkfftkSGpXw4BWScgvJv/exec>'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
 
-
-<script>
-    var sidemenu = document.getElementById("sidemenu")
-
-    function openmenu(){
-        sidemenu.style.right = "0";
-    }
-
-    function closemenu(){
-        sidemenu.style.right = "-200px";
-    }
-
-</script>
-
-
-<script>
-  const scriptURL = '<https://script.google.com/macros/s/AKfycbz6FUObwCrYfuyJfVLRnRiKp6-4JExK2w-v1Sn_QL9yR8XMRkfftkSGpXw4BWScgvJv/exec>'
-  const form = document.forms['submit-to-google-sheet']
-  const msg = document.getElementById("msg")
-
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {
-        msg.innerHTML = "Message Sent Successfully"
-        setTimeout(function(){
-            msg.innerHTML = ""
-        }, 5000)
-        form.reset()
-      })
-      .catch(error => console.error('Error!', error.message))
-  })
-</script>
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+    </script>
+    
 
 
 </body>
