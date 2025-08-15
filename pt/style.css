@@ -497,7 +497,7 @@
         }
     }
 
-/* ----------services----------*/
+    /* ----------services----------*/
     #services {
         padding: 80px 0;
     }
@@ -505,14 +505,14 @@
     .tech-grid {
         display: grid;
         /* Ajustado para caber mais ícones na tela */
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
         grid-gap: 30px;
         margin-top: 50px;
     }
 
     .tech-card {
         background-color: transparent;
-        height: 150px;
+        height: 220px;
         perspective: 1000px; /* Efeito 3D */
         cursor: pointer;
     }
@@ -549,14 +549,14 @@
 
     /* Estilo da frente do card (ícone e nome) */
     .tech-card-front i {
-        font-size: 50px;
+        font-size: 70px;
         margin-bottom: 15px;
         color: #4973ff; /* Cor da sua paleta */
     }
 
-   .tech-card-front img {
-        width: 55px;     /* Para as imagens SVG */
-        height: 55px;    /* Para as imagens SVG */
+    .tech-card-front img {
+        width: 80px;     /* Para as imagens SVG */
+        height: 80px;    /* Para as imagens SVG */
         margin-bottom: 15px;
         object-fit: contain;
         color: #4973ff;
@@ -961,7 +961,37 @@
             justify-content: center;
             align-items: center;
         }
-        
+
+        .tech-grid {
+            grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+        }
+
+        .tech-card {
+            height: 110px;
+        }
+
+        .tech-card-front i {
+            font-size: 40px;
+        }
+
+        .tech-card-front img {
+            width: 45px;     /* Para as imagens SVG */
+            height: 45px;    /* Para as imagens SVG */
+        }
+
+        .tech-card:hover .tech-card-inner {
+            transform: none;
+        }
+
+        .tech-card-back h3 {
+            font-size: 1em;
+            margin-bottom: 5px;
+        }
+
+        .tech-card-back p {
+            font-size: 0.8em;
+        }
+
         .about-col-1, .about-col-2{
             flex-basis: 100%;
         }
